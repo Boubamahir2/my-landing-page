@@ -1,0 +1,50 @@
+@import "variables";
+@import "main";
+@import "keyframes";
+@import "mixins";
+
+
+
+//general styles
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border:none;
+  text-transform: capitalize;
+}
+
+
+//
+*::selection{
+  background: $pinkclr;
+  color: #fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x:hidden ;
+}
+
+body{
+  background: #f9f9f9f9;
+}
+
+section{
+    min-height: 100vh;
+    padding:0 9%;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.heading{
+  text-align: center;
+  background-image: $gradient;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size:3.5em ;
+  text-transform: uppercase;
+  padding: 1rem;
+}

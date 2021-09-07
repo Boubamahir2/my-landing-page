@@ -1,0 +1,625 @@
+@charset "UTF-8";
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 2rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+header .logo {
+  font-size: 2rem;
+  color: #814096;
+}
+header .logo span {
+  color: #f83292;
+}
+header nav a {
+  font-size: 1.7rem;
+  margin-left: 2rem;
+  color: #814096;
+}
+header nav a:hover {
+  color: #f83292;
+}
+header input {
+  display: none;
+}
+header label {
+  font-size: 3rem;
+  padding: 5px;
+  color: #814096;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/home-bg-img.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home .image img {
+  width: 40vw;
+  animation: float 3s linear infinite;
+}
+.home .content h1 {
+  font-size: 4rem;
+  color: #333;
+  text-transform: uppercase;
+}
+.home .content h1 span {
+  color: #f83292;
+  text-transform: uppercase;
+}
+.home .content p {
+  font-size: 1.7rem;
+  color: #666;
+  text-transform: capitalize;
+  padding: 1rem 0;
+}
+.home .content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #814096, #f83292);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.home .content .btn:hover {
+  transform: scale(1.1);
+}
+
+.features .card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.features .card-wrapper .card {
+  flex: 1 1 30rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 1.5rem;
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition: 0.2s linear;
+}
+.features .card-wrapper .card .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #814096, #f83292);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.features .card-wrapper .card .btn:hover {
+  transform: scale(1.1);
+}
+.features .card-wrapper .card img {
+  height: 15rem;
+}
+.features .card-wrapper .card h3 {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+.features .card-wrapper .card p {
+  font-size: 2rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.about {
+  background: url(../images/about-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 3rem;
+}
+.about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about .about-container .image {
+  flex: 1 1 40rem;
+}
+.about .about-container .image img {
+  width: 100%;
+}
+.about .about-container .content {
+  flex: 1 1 40rem;
+}
+.about .about-container .content h3 {
+  font-size: 3rem;
+  color: #666;
+}
+.about .about-container .content p {
+  font-size: 1.5rem;
+  color: #333;
+  padding: 1rem 0;
+}
+.about .about-container .content a:last-child {
+  margin-left: 2rem;
+}
+.about .about-container .content .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #814096, #f83292);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.about .about-container .content .btn:hover {
+  transform: scale(1.1);
+}
+
+.newsletter {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: url(../images/subscribe-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 5rem;
+  border-radius: 5px;
+}
+.newsletter h3 {
+  color: #fff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.newsletter p {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: 2rem auto;
+  width: 70rem;
+}
+.newsletter form {
+  display: flex;
+  border: 0.2rem solid #fff;
+  padding: 0.5rem;
+  border-radius: 5rem;
+  margin: 2rem auto;
+  height: 5.5rem;
+}
+.newsletter form input[type=email] {
+  padding: 0 2rem;
+  font-size: 1.7rem;
+  background: none;
+  width: 100%;
+  color: #fff;
+  text-transform: none;
+}
+.newsletter form input[type=email]::placeholder {
+  color: #eee;
+  text-transform: capitalize;
+}
+.newsletter form input[type=submit] {
+  background: #fff;
+  width: 20rem;
+  font-size: 1.7rem;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+.newsletter form input[type=submit]:hover {
+  color: #f83292;
+}
+
+.review .review-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.review .review-container .review-card {
+  background: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  flex: 1 1 30rem;
+  border-radius: 0.5rem;
+}
+.review .review-container .review-card .fa-quote-right {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #f83292;
+  opacity: 0.3;
+}
+.review .review-container .user img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 7rem;
+  width: 7rem;
+  margin-top: 2rem;
+}
+.review .review-container .user h3 {
+  font-size: 2rem;
+  color: #f83292;
+}
+.review .review-container .user i {
+  color: #814096;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+.review .review-container .user .comment {
+  color: #666;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+.pricing .pricing-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pricing .pricing-container .pricing_card {
+  flex: 1 1 27rem;
+  margin: 1rem;
+  padding: 1rem;
+  background: #fff;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.pricing .pricing-container .pricing_card:nth-child(2), .pricing .pricing-container .pricing_card:hover {
+  border: 0.2rem solid #f83292;
+}
+.pricing .pricing-container .title {
+  color: #814096;
+  font-size: 2.5rem;
+  padding-top: 1rem;
+}
+.pricing .pricing-container .price {
+  font-size: 4rem;
+  color: #f83292;
+  padding: 1rem 0;
+}
+.pricing .pricing-container .price span {
+  font-size: 2rem;
+}
+.pricing .pricing-container .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #814096, #f83292);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.pricing .pricing-container .btn:hover {
+  transform: scale(1.1);
+}
+.pricing .pricing-container ul {
+  padding: 1rem 0;
+  list-style: none;
+}
+.pricing .pricing-container ul li {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 0.5rem 0;
+}
+.pricing .pricing-container ul .fa-check {
+  color: lightgreen;
+}
+.pricing .pricing-container ul .fa-times {
+  color: tomato;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+.contact .btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 3rem;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #814096, #f83292);
+  font-size: 1.7rem;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+}
+.contact .btn:hover {
+  transform: scale(1.1);
+}
+.contact .image {
+  flex: 1 1 40rem;
+}
+.contact .image img {
+  width: 100%;
+}
+.contact form {
+  flex: 1 1 40rem;
+  padding: 2rem 3rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.contact form .heading {
+  text-align: center;
+  padding: 0;
+  padding-bottom: 2rem;
+}
+.contact form .inputBox {
+  position: relative;
+}
+.contact form .inputBox textarea {
+  resize: none;
+  height: 13rem;
+}
+.contact form .inputBox label {
+  position: absolute;
+  top: 1.7rem;
+  left: 0;
+  font-size: 1.7rem;
+  color: #666;
+  transition: 0.2s linear;
+}
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+.contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox textarea:valid ~ label {
+  top: -0.5rem;
+  font-size: 1.5rem;
+  color: #f83292;
+}
+.contact form .inputBox input, .contact form .inputBox textarea {
+  width: 100%;
+  background: none;
+  color: #666;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  font-size: 1.7rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+  text-transform: none;
+}
+
+.footer {
+  padding-top: 3rem;
+  background: url(../images/footer-bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer .footer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .footer-card {
+  flex: 1 1 25rem;
+  margin: 2rem;
+}
+.footer h3 {
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+}
+.footer p {
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  color: #eee;
+}
+.footer a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+  color: #eee;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .info {
+  display: flex;
+  align-items: center;
+}
+.footer .info i {
+  margin: 0.5rem 0;
+  margin-right: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  color: #f83292;
+  font-size: 1.5rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  text-align: center;
+}
+.footer .credit {
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  border-top: 0.1rem solid #fff5;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 991px) {
+  section {
+    padding: 0 3%;
+    padding-top: 7.5rem;
+    padding-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  header label {
+    visibility: visible;
+    opacity: 1;
+  }
+  header nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
+    transition: 0.2s linear;
+  }
+  header nav a {
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+  }
+  header input:checked ~ nav {
+    transform: scaleY(100%);
+    opacity: 1;
+  }
+  header input:checked ~ label::before {
+    content: "";
+  }
+
+  .home {
+    flex-flow: column-reverse;
+  }
+  .home .image img {
+    width: 100%;
+  }
+  .home .content h1 {
+    font-size: 5rem;
+  }
+  .home .content p {
+    font-size: 1.8rem;
+  }
+
+  .about {
+    background-position: right;
+  }
+
+  .newsletter p {
+    width: auto;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .about .about-container .content .button a {
+    width: 100%;
+  }
+  .about .about-container .content .button a:last-child {
+    margin: 1rem 0;
+  }
+  .about .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about .about-container .content a:last-child {
+    margin-left: 0rem;
+  }
+
+  .newsletter p {
+    width: auto;
+  }
+
+  .home .content h1 {
+    font-size: 3rem;
+  }
+  .home .content p {
+    font-size: 1.7rem;
+  }
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+}
+
+*::selection {
+  background: #f83292;
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f9f9f9f9;
+}
+
+section {
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+.heading {
+  text-align: center;
+  background-image: linear-gradient(90deg, #814096, #f83292);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
